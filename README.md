@@ -1,6 +1,6 @@
 # Selectable
 
-## Make <select> more beauty by jQuery
+Make <select> more beauty by jQuery
 
 ## Usage
 ```javascript
