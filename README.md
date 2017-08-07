@@ -1,6 +1,9 @@
-Selectable
+# Selectable
+
 
 Make <select> more beauty by jQuery
+
+
 ```
 $('select').makeSelect({width:100,className:'small',withSearch:true});
 ```
