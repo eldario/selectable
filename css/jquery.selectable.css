@@ -1,0 +1,24 @@
+.selectable {font-family:"Trebuchet Ms";position:relative;cursor:pointer;-moz-user-select: none;-webkit-user-select: none;user-select: none;display:inline-block;border:1px solid #DDD;font-size:12px;background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAV0lEQVQ4je3PwQ1AQBQG4e9EV6IMepHowlEL1EMje8JJ4iC7SxxN8o4z+R8/n7NiT9wSC9QIETmgSq1osd3IG5rcV/qbQJcrn4wXeXgqQ4kZE4o3gZ9MDv6mIlTm3jmnAAAAAElFTkSuQmCC") no-repeat right 3px center #FFF;}
+.selectable * {box-sizing:border-box;}
+.selectable.a {z-index:100;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQ4jWNgGAU0BWwMDAzroZidVM1MDAwMqxkYGP5D8WqoGNGgB0kzDPcQqzkXi2YYziOkOZCBgeEvHgP+QtXgBPfwaIbhu8R6ZRQQCQBbJiL2tnrAOwAAAABJRU5ErkJggg==");background-color:#F0F0F0;}
+.selectable.ml60 {margin-left:60px;}
+.selectable.mr5 {margin-right:5px;}
+.selectable.disabled {opacity:0.2;cursor:default;}
+.selectable.right {float:right;}
+.selectable > .firstelem {padding:3px 10px;overflow:hidden;color:#000;line-height:20px;text-align:left;white-space:nowrap;margin-right: 22px;border-right: 1px solid #f0f0f0;background-color:#FFF;}
+.selectable > input.firstelem {background-color:transparent;width:356px;border:0;}
+.selectable > input.firstelem:focus {outline:none;}
+.selectable.a > .firstelem {color: #DDD;}
+.selectable.a > input.firstelem {color: #000;background-color:#FFF;}
+.selectable > .listitems {overflow:hidden;background:#000;position:absolute;top: 25px;background:#F5F5F5;display:none;padding: 3px 0px;box-shadow: 0 3px 5px 1px #999;width: 100%;}
+.selectable.a > .listitems{display:block;}
+.selectable.a > .listitems p.not_found{padding:3px;color:#999;text-align:center;}
+.selectable > .listitems > ul {padding: 0 5px;list-style:none;font-size:12px;max-height:300px;overflow:auto;margin:0;}
+.selectable.small > .listitems {padding: 3px 0;}
+.selectable.small > .listitems > ul  {font-size:11px;padding:0 3px;text-align:center;}
+.selectable.small > .listitems > ul  > li{font-size:11px;}
+.selectable.small  > .firstelem {padding:3px 5px;text-align:center;}
+.selectable > .listitems > ul > li {cursor:pointer;padding: 3px;color:#000;font-size:12px;}
+.selectable > .listitems > ul > li.a {background:#C81212;color:#fff;cursor:default;}
+.selectable > .listitems > ul > li:hover, .selectable > .listitems > ul > li.h {background:#DDD;}
+.selectable > .listitems > ul > li.a:hover {background:#C81212;}

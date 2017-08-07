@@ -1,0 +1,40 @@
+<html>
+	<head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.selectable.min.css" type="text/css" media="all">
+	</head> 
+	<body>
+		<select id="first" data-width="50">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select id="second" data-width="150" disabled>
+			<option value="1">Windows</option>
+			<option value="2">Linux</option>
+			<option value="3">Mac OS</option>
+		</select>
+		<select id="third">
+			<option value="1">Windows</option>
+			<option value="2">Linux</option>
+			<option value="3">Mac OS</option>
+		</select>
+		<select id="forth">
+			<option value="1">Windows</option>
+			<option value="2">Linux</option>
+			<option value="3">Mac OS</option>
+		</select>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.selectable.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#first').on('change',function(){alert(this.value);});
+				$('#first').makeSelect({className:'small'});
+				$('#second').makeSelect();
+				$('#third').makeSelect({withSearch:true});
+				$('#forth').makeSelect({width:200});
+			});
+		</script>
+	</body>
+</html>
